@@ -1,55 +1,88 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     width: 100vw;
     height: 100vh;
     color: aliceblue;
+    transition: background-color 0.3s ease; /* Transição suave ao mudar cor */
 }
 
-.header{
+.container-blur {
+    background-color: rgba(255, 255, 255, 0.5); /* Efeito de esbranquiçamento */
+}
+.header {
     flex: 1;
     background-color: rgb(7, 77, 77);
 }
 
-.main{
+.main {
     flex: 8;
     background-color: rgb(5, 61, 61);
-}
-
-.footer{
-    flex: 1;
-    background-color: rgb(7, 77, 77);
-}
-
-.modal {
-    display: none; /* Modal escondido por padrão */
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.modal-content {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    width: 300px;
-    text-align: center;
+.footer {
+    flex: 1;
+    background-color: rgb(7, 77, 77);
 }
 
-.close {
-    float: right;
-    font-size: 24px;
+/* Estilo da pequena caixa de login */
+.popuplogin {
+    width: 300px;
+    padding: 20px;
+    background-color: #1a365c;
+    color: aliceblue;
+    border-radius: 10px;
+    position: fixed;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.popuplogin form {
+    display: flex;
+    flex-direction: column;
+}
+
+.popuplogin label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.popuplogin input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.popuplogin button {
+    padding: 10px;
+    background-color: #0b284e;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
+}
+
+.popuplogin button:hover {
+    background-color: #06203e;
+}
+
+.botao {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 10px 20px;
+    background-color: #0b284e;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 20px;
 }
