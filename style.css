@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    color: aliceblue;
+}
+
+.header{
+    flex: 1;
+    background-color: rgb(7, 77, 77);
+}
+
+.main{
+    flex: 8;
+    background-color: rgb(5, 61, 61);
+}
+
+.footer{
+    flex: 1;
+    background-color: rgb(7, 77, 77);
+}
